@@ -1,0 +1,45 @@
+@import 'base/variables';
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html, body {
+	height: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@media (max-width:767px){
+	body.lock {
+		overflow: hidden; //чтобы контет не скролился при открытом меню
+	}
+}
+
+// .wrapper {
+
+// }
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.content {
+	padding-top: 100px;
+	&__text {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+	@media (max-width:767px){
+		padding-top: 70px;
+	}
+}
+
+@import 'blocks/header'
